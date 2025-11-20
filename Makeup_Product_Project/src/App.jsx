@@ -1,40 +1,4 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
-// export default App
-
-
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Product from './components/Product'
@@ -49,6 +13,7 @@ function App() {
       <section className="product-container">
 
         <Product 
+          reviewCount={4.8}
           image="./src/assets/anua-heartleaf-clear-pad.png"
           alt="face-pad-product"
           type="Face Care"
@@ -57,6 +22,7 @@ function App() {
           oldPrice = "$30.00"
         />
         <Product 
+          reviewCount={4.9}
           image="./src/assets/centella-moisture-cream.png"
           alt="Centella Moisture Cream"
           type="Face Care"
@@ -65,6 +31,7 @@ function App() {
           oldPrice = "$20.00"
         />
         <Product 
+          reviewCount={4.0}
           image="./src/assets/torriden-cleansing-foam.png"
           alt="Torriden Cleansing Product"
           type="Face Care"
@@ -73,6 +40,7 @@ function App() {
           
         />
         <Product 
+          reviewCount={4.8}
           image="./src/assets/cerave-cream.png"
           alt="CeraVe Moisturizing Cream"
           type="Face Care"
@@ -84,6 +52,7 @@ function App() {
       {/* Foundation */}
       <section className="product-container">
         <Product 
+          reviewCount={4.2}
           image="./src/assets/fit-me-foundation-series.png"
           alt="Fit Me Foundation Series"
           type="Foundaion-Makeup"
@@ -92,6 +61,7 @@ function App() {
           oldPrice = "$9.50"
         />
         <Product 
+          reviewCount={4.6}
           image="./src/assets/kiko-foundation-series.png"
           alt="Kiko Foundation Series"
           type="Foundaion-Makeup"
@@ -100,6 +70,7 @@ function App() {
          
         />
         <Product 
+          reviewCount={4.9}
           image="./src/assets/elf-foundation-series.png"
           alt="Elf Foundation Series"
           type="Foundaion-Makeup"
@@ -108,6 +79,7 @@ function App() {
          
         />
         <Product 
+          reviewCount={4.7}
           image="./src/assets/klaris-foundation-series.png"
           alt="Klaris Foundation Series"
           type="Foundaion-Makeup"
@@ -120,6 +92,7 @@ function App() {
       {/* Makeup Product */}
       <section className="product-container">
          <Product 
+          reviewCount={4.8}
           image="./src/assets/dior-rosy-glow-powder-blush.png"
           alt="Dior Rosy Glow Powder Blush"
           type="Makeup"
@@ -128,6 +101,7 @@ function App() {
           oldPrice = "$42.00"
         />
         <Product 
+          reviewCount={4.9}
           image="./src/assets/Ysl-Blush-series.png"
           alt="Yves Saint - Make Me Blush Powder Blush"
           type="Makeup"
@@ -136,6 +110,7 @@ function App() {
           oldPrice = "$54.00"
         />
         <Product 
+          reviewCount={4.8}
           image="./src/assets/rare-beauty-blush.png"
           alt="blush-product"
           type="Makeup"
@@ -144,6 +119,7 @@ function App() {
           oldPrice = "$27.19"
         />
         <Product 
+          reviewCount={4.9}
           image="./src/assets/rhode-blush-series.png"
           alt="Rhode Blush Series"
           type="Makeup"
@@ -154,6 +130,7 @@ function App() {
       </section>
       <section className="product-container">
         <Product 
+          reviewCount={4.3}
           image="./src/assets/maybelline-superstayvinylink-lippy10.png"
           alt="Maybelline 10 Lippy Super Stay Vinyl Ink LipStick"
           type="Lip Care"
@@ -162,6 +139,7 @@ function App() {
         
         />
         <Product 
+          reviewCount={4.8}
           image="./src/assets/roma&nd-zero-matte-tint-lippenstiff-6g-Nr.png"
           alt="Romand Matte Tint NR 09"
           type="Lip Care"
@@ -170,6 +148,7 @@ function App() {
           oldPrice = "$11.00"
         />
         <Product 
+          reviewCount={4.9}
           image="./src/assets/romand-juicy-lipstick.png"
           alt="Romand Matte Tint NR 09"
           type="Lip Care"
@@ -178,6 +157,7 @@ function App() {
           oldPrice = "$12.23"
         />
         <Product 
+          reviewCount={4.4}
           image="./src/assets/laneige-lip-balm.png"
           alt="lip-care-product"
           type="Lip Care"
