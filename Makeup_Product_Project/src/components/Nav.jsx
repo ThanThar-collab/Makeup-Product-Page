@@ -5,7 +5,7 @@ export default function Navbar() {
         <section className="navbar-section">
             <div>
                 <div className="navbar-logo-div">
-                    <img src="./src/assets/shop-logo.png" alt="nav-icon" className="nav-icon" />
+                    <img src="./assets/shop-logo.png" alt="nav-icon" className="nav-icon" />
                     <p className="nav-icon-text">Beauty Shop</p>
                     <ul className="nav-items-div">
                         <li className="nav-items">Home</li>
