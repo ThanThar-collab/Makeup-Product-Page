@@ -9,8 +9,22 @@ import {
   makeupProducts, 
   lipCareProducts 
 } from "./data/productData"
+import { useEffect, useState } from 'react'
 
 export default function App() {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://mocki.io/v1/e0477236-259d-4b19-b8c4-cd728418de11")
+      .then(res => res.json())
+      .then(result => {
+
+        console.log("This is the api data",result);   // See API data in console
+        setData(result);
+      })
+      .catch(err => console.error("Error:", err));
+  }, []);
 
   const faceCareProduct = faceCareProducts.map(item => {
      return (

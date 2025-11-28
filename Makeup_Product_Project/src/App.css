@@ -119,6 +119,7 @@
 }
 
 .product-card {
+  position: relative;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -132,8 +133,21 @@
 }
 
 .product-img {
+ 
   border-radius: 10px;
   object-fit: contain;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;      
+  left: 10px;    
+  background-color: #ff3c78;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .product-type {
