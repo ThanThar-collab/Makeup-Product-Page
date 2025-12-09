@@ -9,14 +9,12 @@ export default function Product(props) {
     }, 5000);
     });
 
-    console.log(props)
+    // console.log(props)
     return(
             <div className="product-card">
                 {props.oldPrice > props.newPrice && (
                  <span className="product-badge">{badge}</span>
                 )}
-
-    
                 {/* {
                     props.oldPrice > props.newPrice
                 ? <span className="product-badge">{badge}</span> : null

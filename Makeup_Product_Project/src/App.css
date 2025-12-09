@@ -176,3 +176,172 @@
 
 }
 
+.login-link {
+  text-decoration: none;
+}
+
+.login-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  width: 380px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-input:focus {
+  border-color: #ff3c86;
+  outline: none;
+}
+
+.login-btn, .update-btn, .delete-btn {
+  padding: 14px;
+  background: #ff3c86;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.login-btn:hover {
+  background: #ff1670;
+}
+
+.update-btn:hover {
+  background: #ff1670;
+}
+
+.delete-btn:hover {
+  background: #ff1670;
+}
+
+.user-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+.user-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* components/UserList.css */
+.user-wrapper {
+  padding: 30px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.user-input {
+  background-color: #fafafa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.user-div {
+  border: 1px solid #E0115F;
+  background-color: #f891A5;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 300px;
+  padding: 30px;
+  margin: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  
+}
+
+.update-div-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  z-index: 1000;
+}
+

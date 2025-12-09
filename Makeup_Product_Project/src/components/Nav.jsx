@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 
 export default function Navbar() {
@@ -9,12 +11,12 @@ export default function Navbar() {
                     <p className="nav-icon-text">Beauty Shop</p>
                     <ul className="nav-items-div">
                         <li className="nav-items">Home</li>
-                        <li className="nav-items">Shop</li>
+                        <li className="nav-items"><Link to="/login-page" className="login-link" >Log in</Link></li>
                         <li className="nav-items">Skin Care</li>
                         <li className="nav-items">Makeup</li>
                         <li className="nav-items">Hair Care</li>
                         <li className="nav-items">About Us</li>
-                        <li className="nav-items">Blogs</li>
+                        <li className="nav-items"><Link to="/user-list" className="login-link" >User List</Link></li>
                     </ul>
                     <div className="nav-icons-div">
                         <span className="nav-shop-icons"><FiSearch /></span>
